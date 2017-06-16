@@ -15,4 +15,15 @@ export class AdminComponent implements OnInit {
   ngOnInit() {
   }
 
+  submitForm(
+    name: string,
+    bio: string,
+    medium: string,
+    image: string,
+    email: string
+  ) {
+    var newMember: Member = new Member(name, bio, medium, image, email);
+    this.memberService.addMember(newMember);
+  }
+
 }

@@ -1,4 +1,4 @@
-<h2>members</h2>
+<h2>meet the members</h2>
 
 <div  id="member-div">
   <div class="row">
@@ -17,7 +17,7 @@
   <div *ngFor="let member of members | async | medium:filterByMedium" class="panel panel-default">
 
     <div class="panel-body">
-      <h3  (click)="goToDetailPage(member)">{{member.name}} <em>{{member.medium}}</em></h3>
+      <h2  (click)="goToDetailPage(member)" class="member-name">{{member.name}} <em>{{member.medium}}</em></h2>
     </div>
 
     <div *ngIf="currentRoute === '/admin'">

@@ -1,3 +1,38 @@
-<p>
-  admin works!
-</p>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3>add a member to the sketch club</h3>
+  </div>
+  <div>
+    <div>
+      <label>Member Name:</label>
+      <br>
+      <input #newName>
+    </div>
+
+    <div>
+      <label>Member Bio:</label>
+      <br>
+      <textarea #newBio></textarea>
+    </div>
+
+    <div>
+      <label>Member Preferred Medium(s):</label>
+      <br>
+      <textarea #newMedium></textarea>
+    </div>
+
+    <div>
+      <label>Member Image URL:</label>
+      <br>
+      <input #newImage>
+    </div>
+
+    <div>
+      <label>Project Email:</label>
+      <br>
+      <input #newEmail>
+    </div>
+
+    <button (click)="submitForm(newName.value, newBio.value, newMedium.value, newImage.value, newEmail.value); newName.value=''; newBio.value=''; newMedium.value=''; newImage.value=''; newEmail.value='';">Add</button>
+  </div>
+</div>

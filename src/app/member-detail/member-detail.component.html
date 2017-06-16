@@ -1,5 +1,7 @@
-<h2>{{(memberToDisplay | async)?.name}}</h2>
-<h4><em>{{(memberToDisplay | async)?.bio}}</em></h4>
-<p>{{(memberToDisplay | async)?.medium}}</p>
-<img src="{{(memberToDisplay | async)?.image}}"/>
-<p>${{(memberToDisplay | async)?.email}}</p>
+<div id="member-detail-div">  
+  <h2>{{(memberToDisplay | async)?.name}}</h2>
+  <h4><em>{{(memberToDisplay | async)?.bio}}</em></h4>
+  <p>{{(memberToDisplay | async)?.medium}}</p>
+  <img src="{{(memberToDisplay | async)?.image}}"/>
+  <p>{{(memberToDisplay | async)?.email}}</p>
+</div>

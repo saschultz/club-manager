@@ -32,4 +32,9 @@ export class MemberService {
                                   email: localUpdatedMember.email
     })
   }
+
+  deleteMember(localMemberToDelete) {
+    var memberEntryInFirebase = this.getMemberById(localMemberToDelete.$key);
+    memberEntryInFirebase.remove();
+  }
 }

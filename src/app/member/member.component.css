@@ -5,3 +5,11 @@
 #edit-member-info {
   margin-left: 16px;
 }
+
+.panel {
+  border-color: lightgray;
+}
+
+.panel:hover {
+  background-color: #c9def2;
+}

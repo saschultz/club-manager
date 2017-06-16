@@ -32,10 +32,10 @@ const appRoutes: Routes = [
     path: 'admin/members',
     component: MemberComponent
   },
-  {
-    path: 'admin/members/edit',
-    component: EditMemberComponent
-  }
+  // {
+  //   path: 'admin/members/edit',
+  //   component: EditMemberComponent
+  // }
 
 ];
 

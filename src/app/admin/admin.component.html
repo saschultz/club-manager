@@ -4,7 +4,7 @@
       <app-member></app-member>
     </div>
   </div>
-  
+
   <div class="col-sm-6">
     <div class="panel panel-default" id="new-member-div">
       <div class="panel-heading">
@@ -40,7 +40,7 @@
           <br>
           <input #newEmail>
         </div>
-        <button (click)="submitForm(newName.value, newBio.value, newMedium.value, newImage.value, newEmail.value); newName.value=''; newBio.value=''; newMedium.value=''; newImage.value=''; newEmail.value='';">Add</button>
+        <button class="btn btn-default" (click)="submitForm(newName.value, newBio.value, newMedium.value, newImage.value, newEmail.value); newName.value=''; newBio.value=''; newMedium.value=''; newImage.value=''; newEmail.value='';">Add</button>
         <br><br>
         <p><a routerLink="members">all members</a></p>
       </div>

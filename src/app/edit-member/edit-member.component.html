@@ -29,8 +29,18 @@
     <textarea [(ngModel)]="selectedMember.email"></textarea>
   </div>
   <br>
-  <button (click)="beginUpdatingMember(selectedMember)">Update</button>
+  <div class="row">
+    <div class="col-sm-2">
+      <button class="btn btn-default" (click)="beginUpdatingMember(selectedMember)">Update</button>
+
+    </div>
+    <div class="col-sm-3">
+
+      <button class="btn btn-danger" (click)="beginDeletingMember(selectedMember)">Delete Member</button>
+    </div>
+  </div>
+
+
   <br>
-  <button (click)="beginDeletingMember(selectedMember)">Delete</button>
   <br>
 </div>

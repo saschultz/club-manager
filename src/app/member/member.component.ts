@@ -5,9 +5,9 @@ import { MemberService } from '../member.service';
 import { FirebaseListObservable } from 'angularfire2/database';
 
 @Component({
-  selector: 'app-members',
-  templateUrl: './members.component.html',
-  styleUrls: ['./members.component.css'],
+  selector: 'app-member',
+  templateUrl: './member.component.html',
+  styleUrls: ['./member.component.css'],
   providers: [MemberService]
 })
 export class MemberComponent implements OnInit {
@@ -16,6 +16,7 @@ export class MemberComponent implements OnInit {
   constructor(private router: Router, private memberService: MemberService) { }
 
   ngOnInit() {
+    this.members = this.memberService.getMembers();
   }
 
 }

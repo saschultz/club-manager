@@ -2,7 +2,7 @@ import { ModuleWithProviders }  from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { AboutComponent } from './about/about.component';
-import { MembersComponent } from './members/members.component';
+import { MemberComponent } from './member/member.component';
 
 const appRoutes: Routes = [
   {
@@ -15,7 +15,7 @@ const appRoutes: Routes = [
   },
   {
     path: 'members',
-    component: MembersComponent
+    component: MemberComponent
   }
 
 ];

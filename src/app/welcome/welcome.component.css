@@ -1,3 +1,15 @@
 p {
   text-align: center;
 }
+
+.well {
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/b/b3/Charcoal_pencils_051907.jpg');
+}
+
+/*.welcome-div {
+  background-color: black;
+}*/

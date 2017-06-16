@@ -1,6 +1,6 @@
 <h2>members</h2>
 
-<div *ngFor="let member of members | async" class="panel panel-default">
+<div *ngFor="let member of members | async" (click)="goToDetailPage(member)" class="panel panel-default">
   <div class="panel-body">
     <h3>{{member.name}} <em>{{member.medium}}</em></h3>
   </div>

@@ -26,6 +26,10 @@ const appRoutes: Routes = [
   {
     path: 'admin',
     component: AdminComponent
+  },
+  {
+    path: 'admin/members',
+    component: MemberComponent
   }
 
 ];

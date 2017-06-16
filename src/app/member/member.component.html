@@ -1,7 +1,21 @@
 <h2>members</h2>
 
 <div  id="member-div">
-  <div *ngFor="let member of members | async" class="panel panel-default">
+  <div class="row">
+    <div class="col-sm-2">
+      <p>filter by:</p>
+    </div>
+    <div class="col-sm-1">
+      <select (change)="onChange($event.target.value)">
+        <option value="all mediums" selected="selected">all mediums</option>
+        <option value="charcoal">charcoal</option>
+        <option value="graphite">graphite</option>
+        <option value="chalk">chalk</option>
+      </select>
+    </div>
+  </div>
+  <div *ngFor="let member of members | async | medium:filterByMedium" class="panel panel-default">
+
     <div class="panel-body">
       <h3  (click)="goToDetailPage(member)">{{member.name}} <em>{{member.medium}}</em></h3>
     </div>
@@ -13,11 +27,4 @@
     </div>
 
   </div>
-
-  <!-- <div *ngIf="currentRoute === '/admin/members'">
-    <hr>
-    <button routerLink="edit">edit members</button>
-  </div> -->
-
-
 </div>

@@ -1,32 +1,34 @@
-<div class="form-group">
-  <label>Edit Member Name:</label>
-  <br>
-  <input [(ngModel)]="selectedMember.name">
-</div>
+<div id="edit-member-div">
+  <div class="form-group">
+    <label>Edit Member Name:</label>
+    <br>
+    <input [(ngModel)]="selectedMember.name">
+  </div>
 
-<div class="form-group">
-  <label>Member Bio:</label>
-  <br>
-  <input [(ngModel)]="selectedMember.bio">
-</div>
+  <div class="form-group">
+    <label>Member Bio:</label>
+    <br>
+    <input [(ngModel)]="selectedMember.bio">
+  </div>
 
-<div class="form-group">
-  <label>Member Medium:</label>
-  <br>
-  <textarea [(ngModel)]="selectedMember.medium"></textarea>
-</div>
+  <div class="form-group">
+    <label>Member Medium:</label>
+    <br>
+    <textarea [(ngModel)]="selectedMember.medium"></textarea>
+  </div>
 
-<div class="form-group">
-  <label>Member Image:</label>
-  <br>
-  <input [(ngModel)]="selectedMember.image">
-</div>
+  <div class="form-group">
+    <label>Member Image:</label>
+    <br>
+    <input [(ngModel)]="selectedMember.image">
+  </div>
 
-<div class="form-group">
-  <label>Member email:</label>
-  <br>
-  <textarea [(ngModel)]="selectedMember.email"></textarea>
-</div>
+  <div class="form-group">
+    <label>Member email:</label>
+    <br>
+    <textarea [(ngModel)]="selectedMember.email"></textarea>
+  </div>
 
-<button (click)="beginUpdatingMember(selectedMember)">Update</button>
-<br>
+  <button (click)="beginUpdatingMember(selectedMember)">Update</button>
+  <br>
+</div>

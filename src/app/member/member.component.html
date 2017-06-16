@@ -7,7 +7,7 @@
     </div>
 
     <div *ngIf="currentRoute === '/admin'">
-      <p>{{member.bio}}<br>{{member.email}}</p>
+      <p id="edit-member-info">{{member.bio}}<br>{{member.email}}</p>
       <hr>
       <app-edit-member [selectedMember]="member"></app-edit-member>
     </div>

@@ -7,7 +7,7 @@ import { Member } from '../member.model';
   templateUrl: './members.component.html',
   styleUrls: ['./members.component.css']
 })
-export class MembersComponent implements OnInit {
+export class MemberComponent implements OnInit {
 
   constructor() { }
 

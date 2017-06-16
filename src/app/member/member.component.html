@@ -6,4 +6,10 @@
       <h3>{{member.name}} <em>{{member.medium}}</em></h3>
     </div>
   </div>
-</div>  
+
+  <div *ngIf="currentRoute === '/admin/members'">
+    <hr>
+    <button routerLink="edit">edit members</button>
+    <!-- <app-edit-member></app-edit-member> -->
+  </div>
+</div>

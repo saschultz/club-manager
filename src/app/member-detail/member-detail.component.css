@@ -1,3 +1,8 @@
 #member-detail-div {
   margin-bottom: 100px;
+  text-align: center;
+}
+
+h1 {
+  letter-spacing: 15px;
 }

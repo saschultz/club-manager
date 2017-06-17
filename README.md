@@ -4,6 +4,7 @@
 
 This project was created for the last independent project of JavaScript course at Epicodus. This application was created for an art club manager to track the members of the club, and for the other members to learn about the club and who participates. The admin of the site can add new members, update existing members, and delete members.
 
+## member profile
 
 ![](src/assets/img/sway.png)
 
